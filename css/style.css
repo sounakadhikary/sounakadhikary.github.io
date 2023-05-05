@@ -1,7 +1,11 @@
 body {
   font-family: 'JetBrains Mono', monospace;
-  background-color: #FBF9F6;
+  background-color: #F8F3EC;
   color: #0D1D3E;
+}
+
+.title-style {
+  font-size: 24px;
 }
 
 .highlight-container, .highlight {
@@ -15,7 +19,7 @@ body {
 .highlight-container::before{
   content: " ";
   display: block;
-  height: 20%;
+  height: 30%;
   width: 100%;
   margin-left: -3px;
   margin-right: -3px;
@@ -29,6 +33,5 @@ body {
 }
 
 .bold-style{
-  font-size: 18px;
   font-weight: bold;
 }
