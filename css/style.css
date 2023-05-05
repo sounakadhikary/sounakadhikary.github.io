@@ -1,0 +1,34 @@
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #FBF9F6;
+  color: #0D1D3E;
+}
+
+.highlight-container, .highlight {
+  position: relative;
+}
+
+.highlight-container {
+  display: inline-block;
+}
+
+.highlight-container::before{
+  content: " ";
+  display: block;
+  height: 20%;
+  width: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  background: #B2C7F1;
+  transform: rotate(3deg);
+  top: 10px;
+  left: -1px;
+  border-radius: 2% 15% 3% 4%;
+  padding: 5px 3px 3px 5px;
+}
+
+.bold-style{
+  font-size: 18px;
+  font-weight: bold;
+}
