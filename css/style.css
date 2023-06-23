@@ -2,36 +2,69 @@ body {
   font-family: 'JetBrains Mono', monospace;
   background-color: #F8F3EC;
   color: #0D1D3E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.container{
+  width: 98%;
+  display: grid;
+  height: 100%;
+}
+
+.header{
+  width: 100%;
+  /* justify-items: start;  */
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  /* grid-auto-flow: column; */
+  align-items: center;
+  grid-column-gap: 5px;
+  height: 70px;
 }
 
 .title-style {
+  display: grid;
+  height: inherit;
   font-size: 24px;
+  align-items: center;
+  justify-content: center;  
+  grid-template-columns: 1fr 1fr;
 }
 
+.bold-style{
+  font-size: 48px;
+  font-weight: bold;
+}
 .highlight-container, .highlight {
   position: relative;
+}
+
+.greeting-container{
+
 }
 
 .highlight-container {
   display: inline-block;
 }
 
-.highlight-container::before{
+
+.highlight-container:before{
   content: " ";
   display: block;
-  height: 30%;
-  width: 100%;
+  height: 60%;
+  width: 220px;
   margin-left: -3px;
   margin-right: -3px;
   position: absolute;
   background: #B2C7F1;
+  top: 20px;
+  left: -20px;
   transform: rotate(3deg);
-  top: 10px;
-  left: -1px;
-  border-radius: 2% 15% 3% 4%;
+  border-radius: 12% 15% 8% 24%;
   padding: 5px 3px 3px 5px;
 }
 
-.bold-style{
-  font-weight: bold;
-}
+
