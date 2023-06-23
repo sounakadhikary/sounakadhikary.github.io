@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+  .header{
+    height: 120px;
+  }
+  .title-style{
+    grid-template-columns: 1fr;
+  }
+}
+
+
